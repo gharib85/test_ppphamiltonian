@@ -15,18 +15,18 @@ for i in range(k):
     two_electron_matrixu[i+k,i] = u_matrix[i]
 for i in range(k):
     for j in range(i,k):
-         v_ij = v_matrix[i, j]
-         two_electron_matrixv[i, j] = v_ij
-         two_electron_matrixv[j, i] = v_ij
+        v_ij = v_matrix[i, j]
+        two_electron_matrixv[i, j] = v_ij
+        two_electron_matrixv[j, i] = v_ij
 
-         two_electron_matrixv[i, j+k] = v_ij
-         two_electron_matrixv[j+k, i] = v_ij
+        two_electron_matrixv[i, j+k] = v_ij
+        two_electron_matrixv[j+k, i] = v_ij
 
-         two_electron_matrixv[i+k, j] = v_ij
-         two_electron_matrixv[j, i+k] = v_ij
+        two_electron_matrixv[i+k, j] = v_ij
+        two_electron_matrixv[j, i+k] = v_ij
 
-         two_electron_matrixv[i+k, j+k] = v_ij
-         two_electron_matrixv[j+k, i+k] = v_ij
+        two_electron_matrixv[i+k, j+k] = v_ij
+        two_electron_matrixv[j+k, i+k] = v_ij
 two_electron_matrix=two_electron_matrixu+two_electron_matrixv
 print("v+u")
 print(two_electron_matrix.toarray())
@@ -46,18 +46,18 @@ for i in range(k):
     two_electron_matrix[i+k,i] = u_matrix[i]
 for i in range(k):
     for j in range(i,k):
-         v_ij = v_matrix[i, j]
-         two_electron_matrix[i, j] = v_ij
-         two_electron_matrix[j, i] = v_ij
+        v_ij = v_matrix[i, j]
+        two_electron_matrix[i, j] = v_ij
+        two_electron_matrix[j, i] = v_ij
 
-         two_electron_matrix[i, j+k] = v_ij
-         two_electron_matrix[j+k, i] = v_ij
+        two_electron_matrix[i, j+k] = v_ij
+        two_electron_matrix[j+k, i] = v_ij
 
-         two_electron_matrix[i+k, j] = v_ij
-         two_electron_matrix[j, i+k] = v_ij
+        two_electron_matrix[i+k, j] = v_ij
+        two_electron_matrix[j, i+k] = v_ij
 
-         two_electron_matrix[i+k, j+k] = v_ij
-         two_electron_matrix[j+k, i+k] = v_ij
+        two_electron_matrix[i+k, j+k] = v_ij
+        two_electron_matrix[j+k, i+k] = v_ij
 
 print("v over write u")
 print(two_electron_matrix.toarray())
